@@ -1,0 +1,25 @@
+<h2>Register here:</h2>
+<% if @message %>
+<p><%= @message %></p>
+<% end %>
+
+<div id="new-user-form">
+  <form action='/users' method='post'>
+    <div class="formfield" id="email-field">
+      <label>Email:</label><br>
+      <input type="email" name="user[email]" required>
+    </div>
+    <div class="formfield" id="username-field">
+      <label>Username:</label><br>
+      <input type="text" name="user[username]" required>
+    </div>
+    <div class="formfield" id="password-field">
+      <label>Password:</label><br>
+      <input type="password" name="user[password]" required>
+    </div>
+    <div ="submit-field">
+      <input type="submit" value="Register User">
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,76 @@
+nav a {
+  color: #4D91EB;;
+}
+ul {
+  list-style: none;
+}
+
+nav li {
+  font-size: 120%;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 10%;
+}
+
+#new-user-form {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+#login-form {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+
+a#header-link {
+text-decoration: none;
+color: black;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 160%;
+  font-weight: normal;
+}
+
+.formfield {
+  margin-bottom: 10px;
+}
+
+body {
+  margin-left: 20px;
+  font-family: Verdana;
+}
+
+#potlucks-list > li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+a {
+  color: #4D91EB;
+}
+
+span#name {
+  font-size: 140%;
+}
+
+.button {
+     background:none!important;
+     border: none;
+     padding:0!important;
+     cursor: pointer;
+     color: #4D91EB;
+     text-decoration: underline;
+     display: inline!important;
+}

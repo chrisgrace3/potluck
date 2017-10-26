@@ -1,0 +1,8 @@
+<h2>Upcoming Potlucks:</h2>
+
+<ul id="potlucks-list">
+  <% @potlucks.each do |potluck| %>
+  <li><a href="potlucks/<%= potluck.id %>"><span id="name"><%= potluck.name %></span></a>
+    <br><%= "#{potluck.starts_at.strftime('%B %d %Y')}, at #{potluck.location}" %></li>
+  <% end %>
+</ul>

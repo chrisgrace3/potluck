@@ -1,0 +1,21 @@
+<h2>Log in here:</h2>
+<% if @message %>
+<p><%= @message %></p>
+<% end %>
+
+<div id="login-form">
+  <form action='/sessions' method='post'>
+    <div class="formfield" id="username-field">
+      <label>Email:</label><br>
+      <input type="text" name="email" required>
+    </div>
+    <div class="formfield" id="password-field">
+      <label>Password:</label><br>
+      <input type="password" name="password" required>
+    </div>
+    <div ="submit-field">
+      <input type="submit" value="Login">
+    </div>
+  </form>
+</div>
+

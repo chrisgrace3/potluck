@@ -1,0 +1,13 @@
+<% if @message %>
+<p><%= @message %></p>
+<% end %>
+
+<div class="potluck-form">
+  <form action='/potlucks' method='post'>
+    <%= erb :'potlucks/_form_fields', layout: false %>
+    <div ="submit-field">
+      <input type="submit" value="Save Potluck">
+    </div>
+  </form>
+</div>
+

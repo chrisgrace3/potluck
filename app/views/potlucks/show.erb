@@ -1,0 +1,15 @@
+<h2><%= @potluck.name %></h2>
+
+<ul>
+  <li>Location: <%= @potluck.location %></li>
+  <li>Date: <%= @potluck.starts_at.strftime('%B %d, %Y') %></li>
+  <li>Time: <%= @potluck.starts_at.strftime('%I:%M %p') %></li>
+  <li>Host: <%= @potluck.host.username %></li>
+  <li><br>
+    <% if logged_in? && host? %>
+    <a href="/potlucks/<%= @potluck.id %>/edit">Edit</a>
+    <% end %>
+  </li>
+</ul>
+
+
